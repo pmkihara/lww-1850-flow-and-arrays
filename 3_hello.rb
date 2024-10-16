@@ -20,7 +20,12 @@ evening = hour >= 18
 # Printar "Good afternoon! It's time for coffee!" se for de tarde
 # Printar "Good evening! It's not time for coffee!" se for de noite
 # Printar "It's midday! It's time for lunch!" se for meio-dia
-puts "Good morning! It's time for coffee!"
-puts "Good afternoon! It's time for coffee!"
-puts "Good evening! It's not time for coffee!"
-puts "It's midday! It's time for lunch!"
+if morning
+  puts "Good morning! It's time for coffee!"
+elsif evening
+  puts "Good evening! It's not time for coffee!"
+elsif afternoon
+  puts "Good afternoon! It's time for coffee!"
+else
+  puts "It's midday! It's time for lunch!"
+end
